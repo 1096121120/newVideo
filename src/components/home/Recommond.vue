@@ -28,7 +28,7 @@ export default {
   },
   created() {
     this.axios
-      .get("http://localhost:3000/list")
+      .get("http://localhost:8088/list")
       .then(res => {
         console.log(res);
         this.list = res.data.data;
